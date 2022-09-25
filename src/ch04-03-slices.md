@@ -1,8 +1,11 @@
 ## The Slice Type
 
-*Slices* let you reference a contiguous sequence of elements in a collection
-rather than the whole collection. A slice is a kind of reference, so it does
-not have ownership.
+*Slices* are a kind of reference, which lets you access a contiguous sub-sequence
+of elements in a collection, rather than the whole sequence. We will discuss
+collections more thoroughly in [Chapter 8](book/src/ch08-00-common-collections.md),
+for now, think of them as useful types, that encompass many values under a single
+reference (e.g. Arrays, Strings, and Vecs).
+Because slices are a kind of reference, they too do not have ownership.
 
 Here’s a small programming problem: write a function that takes a string of
 words separated by spaces and returns the first word it finds in that string.
